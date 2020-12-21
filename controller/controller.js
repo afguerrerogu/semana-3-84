@@ -87,7 +87,7 @@ exports.update = async(req, res, next) =>{
             })
         }
     }catch (error){
-        res.status(500).send({
+        res.status(500).send({ 
             message: 'Error en el ingreso'
         })
         next(error);
